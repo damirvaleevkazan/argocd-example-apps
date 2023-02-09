@@ -1,17 +1,17 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: guestbook-ui_vd
+  name: guestbook-ui
 spec:
   revisionHistoryLimit: 3
   progressDeadlineSeconds: 30
   selector:
     matchLabels:
-      app: guestbook-ui_vd
+      app: guestbook-ui
   template:
     metadata:
       labels:
-        app: guestbook-ui_vd
+        app: guestbook-ui
     spec:
       containers:
       - name: guestbook-ui_vd

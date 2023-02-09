@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: guestbook-ui-vd
+  name: guestbook-uivd
 spec:
   ports:
   - port: 90
     targetPort: 90
   selector:
-    app: guestbook-ui-vd
+    app: guestbook-uivd

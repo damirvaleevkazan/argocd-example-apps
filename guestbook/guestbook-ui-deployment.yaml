@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: guestbook-ui-vd
+  name: guestbook-uivd
 spec:
   revisionHistoryLimit: 3
   progressDeadlineSeconds: 30
   selector:
     matchLabels:
-      app: guestbook-ui-vd
+      app: guestbook-uivd
   template:
     metadata:
       labels:
-        app: guestbook-ui-vd
+        app: guestbook-uivd
     spec:
       containers:
-      - name: guestbook-ui_vd
+      - name: guestbook-uivd
         image: gcr.io/google-samples/gb-frontend:v4
         resources:
           requests:
